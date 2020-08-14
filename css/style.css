@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a, a:hover{
+	text-decoration: none;
+}
+.section{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+h2.common_title{
+	text-align: center;
+	color: #000;
+	margin-bottom: 40px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+h2.common_title::after{
+	content: "";
+	display: block;
+	background-color: #f53b57;
+	width: 150px;
+	height: 3px;
+	margin: 15px auto;
+}
+#header{
+	color: #fff;
+	background-color: #f53b57;
+}
+h1.logo{
+	font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 6px;
+}
+.menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.menu li{
+	display: inline-block;
+}
+.menu li a{
+	display: inline-block;
+	color: #fff;
+	padding:10px;
+	display: block;
+	/* text-decoration: none; */
+	text-transform: capitalize;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.menu li a:hover{
+	background-color: #e81837;
+}
+#banner{
+	background-image: url('../images/com23.jpeg');
+	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat:no-repeat;
+}
+.banner_title{
+	padding-top: 8rem;
+	padding-bottom: 5rem;
+}
+.title{
+	background-color: rgba(255, 255, 255, 0.8);
+	display: inline-block;
+	padding: 10px;
+	margin: 0;
+}
+.banner_title p.lead{
+	background-color: rgba(245, 59, 87, 0.8);
+	color: #fff;
+	padding: 10px;
+}
+.service_box{
+	text-align: center;
+}
+.service_box i.fa{
+	color: #f53b57;
+    font-size: 30px;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #f53b57;
+    border-radius: 50%;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    line-height: 40px;
+    transition: all 0.3s linear;
+    margin-bottom: 15px;
+}
+.service_box i.fa:hover{
+	background-color: #f53b57;
+	color: #fff;
+}
+.service_box h3{
+	text-transform: capitalize;
+	margin: 5px 0 10px;
+}
+
+.testimonial img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+#testimonials{
+	color: #fff;
+	background-image: url('../images/com23.jpeg');
+	background-size: cover; 
+	background-position: 0 0; 
+	padding: 50px 0;
+	position: relative;
+}
+#testimonials::before{
+	background: rgba(72, 84, 96, 0.4);
+	position: absolute;
+	content: "" ;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.news_post img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+.news_post h3{
+	font-size: 1.3rem;
+	
+}
+.news_post h3 a {
+	color: #f53b57;
+}
+.post_date{
+	font-size: 13px;
+	margin-bottom: 2px;
+}
+.post_date::before{
+	content: "\f073";
+	font-family: FontAwesome;
+	margin-right: 5px;
+}
+.readmore{
+	color: #f53b57;
+	font-size: 14px;
+}
+.readmore::after{
+    content: "\f101";
+    font-family: FontAwesome;
+	margin-left: 5px;
+}
+#footer{
+	color: #fff;
+	padding: 10px 0;
+	background-color: #f53b57;
+}
+.social_icons{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.social_icons li{
+	display: inline-block;
+}
+.social_icons li a{
+	display: block;
+	padding: 5px 10px 0;
+	margin: 0;
+}
+
+.copyright{
+	font-size: 17px;
+	margin: 0;
+}
+.social_icons li a.fa {
+	color: #fff;
+	font-size: 18px;
+}
+
+@media (max-width: 1200px){
+	.copyright{
+		margin-top: 8px;
+		font-size: 20px;
+	}
+	.social_icons{
+		margin-top: 12px;
+	}
+
+}
+@media (max-width: 992px){
+	h1.logo {
+	    font-size: 1.7rem;
+	    font-weight: 600;
+	    margin-top: 8px;
+	}
+	.menu li a {
+	    font-size: 1.1rem;
+	    font-weight: 600;
+	}
+	.banner_title {
+	    padding-top: 1rem;
+	    padding-bottom: 0;
+	}
+	.banner_title p.lead {
+	    font-size: 1.1rem;
+	}
+	.copyright{
+		margin-top: 10px;
+		font-size: 18px;
+	}
+	.social_icons{
+		margin-top: 13px;
+	}
+
+}
+@media (max-width: 768px){
+	h1.logo {
+	    text-align: center;
+	}
+	.menu {
+	    text-align: center;
+	}
+	.service_box{
+		padding-bottom: 15px;
+	}
+	.testimonial{
+		text-align: center;
+		padding-bottom: 30px;
+	}
+	.news_post{
+		padding-bottom: 30px;
+	}
+	.news_post img {
+	    margin-bottom: 25px;
+	}
+	.copyright{
+		text-align: center;
+		padding-bottom: 5px;
+	}
+	.social_icons{
+		text-align: center;
+	}
+}
